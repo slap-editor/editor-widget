@@ -1,7 +1,7 @@
 {
-  "name": "editor-element",
+  "name": "editor-widget",
   "version": "1.0.0",
-  "description": "Editor element used by slap-editor/slap",
+  "description": "Editor widget used by slap-editor/slap",
   "main": "index.js",
   "dependencies": {
     "base-widget": "dbkaplun/base-widget",
@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbkaplun/editor-element.git"
+    "url": "git+https://github.com/dbkaplun/editor-widget.git"
   },
   "author": "Dan Kaplun <dbkaplun@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dbkaplun/editor-element/issues"
+    "url": "https://github.com/dbkaplun/editor-widget/issues"
   },
-  "homepage": "https://github.com/dbkaplun/editor-element#readme"
+  "homepage": "https://github.com/dbkaplun/editor-widget#readme"
 }
