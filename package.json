@@ -4,6 +4,7 @@
   "description": "Editor element used by slap-editor/slap",
   "main": "index.js",
   "dependencies": {
+    "base-widget": "dbkaplun/base-widget",
     "blessed": "^0.1.60",
     "bluebird": "^2.9.27",
     "es6-set": "^0.1.1",
