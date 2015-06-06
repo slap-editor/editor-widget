@@ -1,2 +1,2 @@
-# editor-element
-Editor element used by slap-editor/slap
+# editor-widget
+Editor widget used by slap-editor/slap
