@@ -14,11 +14,14 @@
     "lodash": "^3.9.3",
     "rc": "^1.0.3",
     "slap-util": "dbkaplun/slap-util",
+    "tape": "^4.0.0",
     "text-buffer": "^6.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "get-random-port": "0.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "spec/index.js"
   },
   "repository": {
     "type": "git",
