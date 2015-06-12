@@ -15,7 +15,7 @@
     "rc": "^1.0.3",
     "slap-util": "dbkaplun/slap-util",
     "tape": "^4.0.0",
-    "text-buffer": "^6.3.0"
+    "text-buffer": "~6.1.3"
   },
   "devDependencies": {
     "get-random-port": "0.0.1"
