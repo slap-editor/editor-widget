@@ -4,15 +4,16 @@ var test = require('tape');
 var fs = require('fs');
 var path = require('path');
 
-var blessed = require('blessed');
+var Screen = require('base-widget/spec/util').screenFactory;
 var Editor = require('../.');
 
 test("Editor", function (t) {
-  var screen = new blessed.Screen();
+  var screen = new Screen();
+  screen.key('C-q', function () { process.exit(); });
   var editor = new Editor({parent: screen});
 
   t.test(".open", function (st) {
-    st.test("should open a file with perms 000 correctly", function (sst) {
+    st.test("should throw EACCES for a file with perms 000", function (sst) {
       sst.plan(1);
 
       var perms000File = path.resolve(__dirname, 'fixtures/perms-000');
@@ -22,13 +23,10 @@ test("Editor", function (t) {
       fs.chmodSync(perms000File, '000');
 
       editor.open(perms000File)
-        .then(function () {
-          sst.equal(editor.textBuf.getText(), '');
-        })
+        .then(function () { sst.ok(false); })
+        .catch(function (err) { sst.equal(err.code, 'EACCES'); })
         .finally(function () { fs.chmodSync(perms000File, originalPerms); })
         .done();
     });
-    st.end();
   });
-  t.end();
 });
