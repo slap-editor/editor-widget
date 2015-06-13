@@ -31,9 +31,9 @@ test("Editor", function (t) {
   });
 
   t.on('end', function () {
-    Editor.highlightClient
-      .then(function (client) { client.dontRespawn = true; })
-      .then(function () { editor.detach(); })
-      .done();
+    Editor.highlightClient.done(function (client) {
+      client.dontRespawn = true;
+      editor.detach();
+    });
   });
 });
