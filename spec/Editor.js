@@ -29,4 +29,11 @@ test("Editor", function (t) {
         .done();
     });
   });
+
+  t.on('end', function () {
+    Editor.highlightClient
+      .then(function (client) { client.dontRespawn = true; })
+      .then(function () { editor.detach(); })
+      .done();
+  });
 });
