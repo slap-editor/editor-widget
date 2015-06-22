@@ -13,6 +13,7 @@
     "iconv-lite": "^0.4.10",
     "lazy.js": "^0.4.0",
     "lodash": "^3.9.3",
+    "minimist": "^1.1.1",
     "rc": "^1.0.3",
     "slap-util": "dbkaplun/slap-util",
     "tape": "^4.0.0",
