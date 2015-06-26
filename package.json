@@ -1,6 +1,6 @@
 {
   "name": "editor-widget",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Editor widget used by slap-editor/slap",
   "main": "index.js",
   "dependencies": {
