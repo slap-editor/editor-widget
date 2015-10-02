@@ -16,7 +16,7 @@
     "rc": "1.1.2",
     "semver": "5.0.3",
     "slap-util": "1.0.5",
-    "tape": "4.2.0",
+    "tape": "4.2.1",
     "text-buffer": "7.1.2"
   },
   "devDependencies": {
