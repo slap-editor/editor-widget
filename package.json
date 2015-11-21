@@ -18,7 +18,7 @@
     "semver": "5.1.0",
     "slap-util": "1.0.5",
     "tape": "4.2.2",
-    "text-buffer": "8.0.4"
+    "text-buffer": "8.0.6"
   },
   "devDependencies": {
     "get-random-port": "0.0.1"
