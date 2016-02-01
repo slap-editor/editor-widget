@@ -6,7 +6,7 @@
   "dependencies": {
     "base-widget": "1.0.10",
     "blessed": "0.1.81",
-    "bluebird": "3.2.0",
+    "bluebird": "3.2.1",
     "cheerio": "0.20.0",
     "copy-paste": "^1.1.4",
     "es6-set": "0.1.4",
