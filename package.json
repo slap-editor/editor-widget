@@ -15,7 +15,7 @@
     "lodash": "3.10.1",
     "minimist": "1.2.0",
     "rc": "1.1.6",
-    "semver": "5.1.0",
+    "semver": "5.2.0",
     "slap-util": "1.0.6",
     "text-buffer": "8.0.6"
   },
