@@ -17,11 +17,11 @@
     "rc": "1.1.6",
     "semver": "5.1.0",
     "slap-util": "1.0.6",
-    "tape": "4.5.1",
     "text-buffer": "8.0.6"
   },
   "devDependencies": {
-    "get-random-port": "0.0.1"
+    "get-random-port": "0.0.1",
+    "tape": "^4.5.1"
   },
   "scripts": {
     "test": "spec/index.js"
