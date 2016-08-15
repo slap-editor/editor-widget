@@ -3,7 +3,7 @@ Editor widget used by slap-editor/slap
 
 #### Example
 
-```
+```js
 var blessed = require('blessed');
 var Editor = require('editor-widget');
 
