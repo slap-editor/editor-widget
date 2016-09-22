@@ -1,23 +1,15 @@
 # editor-widget [![Build Status](https://travis-ci.org/slap-editor/editor-widget.svg?branch=master)](https://travis-ci.org/slap-editor/editor-widget)
-Editor widget used by slap-editor/slap
+Editor widget for blessed used by the [slap](https://github.com/slap-editor/slap) text editor
 
-#### Example
+## Example
 
 ```js
-var blessed = require('blessed');
-var Editor = require('editor-widget');
+const blessed = require('blessed');
+const Editor = require('editor-widget');
 
-var filePath = './file.txt';
-
-// Create a screen object.
-var screen = blessed.screen({
-  smartCSR: true
-});
-
-screen.title = 'my window title';
-
-// Create editor object
-var editor = new Editor({
+const screen = blessed.screen({smartCSR: true, title: "editor-widget example"});
+const editor = new Editor({
+  // normal blessed widget, use like you would any other blessed element
   parent: screen,
   top: 0,
   left: 0,
@@ -25,19 +17,16 @@ var editor = new Editor({
   height: '100%'
 });
 
+const filePath = './file.txt';
 editor.open(filePath);
+screen.key(['C-s'], (ch, key) => { editor.save(filePath); });
 
-// Save on Control-S.
-screen.key(['C-s'], function(ch, key) {
-  editor.save(filePath);
-});
-
-// Quit on Escape, q, or Control-C.
-screen.key(['escape', 'q', 'C-c'], function(ch, key) {
-  return process.exit(0);
-});
-
-// Render the screen.
+screen.key(['escape', 'q', 'C-c'], (ch, key) => { process.exit(0); });
 screen.render();
-
 ```
+
+## In use
+Here are some projects that use editor-widget:
+
+* [slap](https://github.com/slap-editor/slap)
+* [derhuerst/js-playgrounds](https://github.com/derhuerst/js-playgrounds)
