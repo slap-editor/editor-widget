@@ -10,7 +10,7 @@
     "cheerio": "^0.20.0",
     "copy-paste": "^1.1.4",
     "es6-set": "0.1.4",
-    "highlight.js": "9.5.0",
+    "highlight.js": "9.8.0",
     "iconv-lite": "0.4.13",
     "lodash": "3.10.1",
     "minimist": "1.2.0",
