@@ -9,7 +9,7 @@
     "bluebird": "3.4.1",
     "cheerio": "^0.20.0",
     "copy-paste": "^1.1.4",
-    "es6-set": "0.1.4",
+    "es6-set": "0.1.5",
     "highlight.js": "9.5.0",
     "iconv-lite": "0.4.13",
     "lodash": "3.10.1",
