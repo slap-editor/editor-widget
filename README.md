@@ -1,4 +1,4 @@
-# editor-widget [![Build Status](https://travis-ci.org/slap-editor/editor-widget.svg?branch=master)](https://travis-ci.org/slap-editor/editor-widget)
+# editor-widget [![Build Status](https://travis-ci.org/slap-editor/editor-widget.svg?branch=master)](https://travis-ci.org/slap-editor/editor-widget) [![Greenkeeper badge](https://badges.greenkeeper.io/slap-editor/editor-widget.svg)](https://greenkeeper.io/)
 Editor widget for blessed used by the [slap](https://github.com/slap-editor/slap) text editor
 
 ## Example
